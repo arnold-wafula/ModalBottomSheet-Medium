@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">ModalBottomSheet</string>
+    <string name="text_modal">Modal Bottom Sheet</string>
+    <string name="text_fullscreen_modal">Full Screen Modal</string>
+    <string name="mail">Mail</string>
+    <string name="duo">Duo</string>
+    <string name="sms">SMS</string>
+    <string name="youtube">YouTube</string>
+    <string name="share">Share</string>
+</resources>
