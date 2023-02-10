@@ -1,7 +1,111 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
+<androidx.coordinatorlayout.widget.CoordinatorLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        app:navigationIcon="@drawable/ic_close"
+        app:navigationIconTint="@color/white"
+        android:layout_height="?attr/actionBarSize"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp">
+
+            <ImageView
+                android:id="@+id/headerImage"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:contentDescription="@null"
+                android:layout_margin="4dp"
+                android:src="@drawable/rabbit1"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/title_text"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:fontFamily="@font/font"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Headline4"
+                app:layout_constraintTop_toBottomOf="@id/headerImage"
+                app:layout_constraintStart_toStartOf="@id/headerImage"/>
+
+            <TextView
+                android:id="@+id/subtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/subtitle_text"
+                android:textColor="@color/white"
+                android:fontFamily="@font/font"
+                android:layout_marginTop="4dp"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+                app:layout_constraintTop_toBottomOf="@id/title"
+                app:layout_constraintStart_toStartOf="@id/title"/>
+
+            <TextView
+                android:id="@+id/paragraph"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/paragraph_text"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/font"
+                android:textColor="@color/white"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+                app:layout_constraintTop_toBottomOf="@id/subtitle"
+                app:layout_constraintStart_toStartOf="@id/subtitle"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+    <!--
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:minHeight="100dp">
+
+            <ImageView
+                android:id="@+id/top"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:contentDescription="@null"
+                android:background="?attr/colorSecondaryVariant"/>
+
+            <ImageView
+                android:id="@+id/bottom"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:contentDescription="@null"
+                android:background="?attr/colorSecondary"/>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+    -->
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

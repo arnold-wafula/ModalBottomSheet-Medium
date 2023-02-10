@@ -1,8 +1,7 @@
 package com.lemonboy.modalbottomsheet
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.google.android.material.snackbar.Snackbar
+import androidx.appcompat.app.AppCompatActivity
 import com.lemonboy.modalbottomsheet.databinding.ActivityMainBinding
 import com.lemonboy.modalbottomsheet.dialog.FullscreenModalBottomSheetDialog
 import com.lemonboy.modalbottomsheet.dialog.ModalBottomSheetDialog
@@ -26,7 +25,10 @@ class MainActivity : AppCompatActivity() {
             }
 
             btnFullscreenModal.setOnClickListener {
-                Snackbar.make(it, "Implementing on part 2", Snackbar.LENGTH_LONG).show()
+                //Snackbar.make(it, "Implementing on part 2", Snackbar.LENGTH_LONG).show()
+
+                val fullscreenModal = FullscreenModalBottomSheetDialog()
+                supportFragmentManager.let { fullscreenModal.show(it, "FullscreenModalBottomSheetDialog") }
             }
         }
     }

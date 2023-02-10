@@ -7,4 +7,9 @@
     <string name="sms">SMS</string>
     <string name="youtube">YouTube</string>
     <string name="share">Share</string>
+
+
+    <string name="title_text">Mr. Rabbit</string>
+    <string name="subtitle_text">Mr. Rabbit escapes to the bushes.</string>
+    <string name="paragraph_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris id nibh id massa feugiat interdum. Vivamus magna elit, blandit vitae porttitor vel, condimentum non orci. Pellentesque et convallis massa, quis cursus massa. Etiam nec diam erat. Maecenas porta metus erat, vitae sollicitudin magna efficitur quis. Suspendisse elementum tempor lorem, nec molestie est molestie sed. In vitae tincidunt justo. Integer pellentesque, velit non imperdiet tincidunt, est neque ultricies velit, vel vehicula sem lectus non purus. Curabitur massa mi, finibus ac fermentum a, sagittis a arcu. Proin dignissim magna eu posuere vehicula. Praesent non tincidunt enim. In non aliquam nisl. Nam rhoncus iaculis purus non malesuada. Suspendisse tincidunt tincidunt lectus, vel placerat nisi venenatis vitae. Nullam euismod congue leo, a semper libero venenatis sit amet. Nunc a urna a ipsum suscipit dictum quis eget augue.\n\n Vivamus accumsan diam vel massa tristique tempus. Cras rutrum libero lectus, sit amet blandit dui porta commodo. In aliquam libero id est iaculis, tincidunt placerat felis imperdiet. In tempus nisi non arcu tempor, sit amet volutpat enim venenatis. Nunc ornare est in diam luctus gravida. Proin eget egestas dolor. In non sapien orci.</string>
 </resources>
